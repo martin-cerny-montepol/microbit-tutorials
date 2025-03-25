@@ -34,3 +34,13 @@ basic.forever(function () {
     basic.showNumber(pocet)
 })
 ```
+
+## Zpátky na nulu!
+
+V tuto chvíli musíme micro:bit vypnout a zase zapnout, abychom počítadlo vynulovali. To je trochu otrava. Nastav microbit, aby počítadlo vynuloval při stisku tlačítka B.
+
+```blocks
+input.onButtonPressed(Button.B, function () {
+    pocet = 0
+})
+```
